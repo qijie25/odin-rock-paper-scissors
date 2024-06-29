@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=43894">Pixabay</a> -->
+    <audio id="win_audio" src="audio/level-win-6416.mp3"></audio>
+    <audio id="lose_audio" src="audio/videogame-death-sound-43894.mp3"></audio>
+    <div class="container">
+        <div class="topContainer">
+            <h1 class="gameTitle">Rock, Paper, Scissors!</h1>
+        </div>
+        <div class="gameContainer">
+            <!-- Player 1: Human -->
+            <div class="playerContainer">
+                <h1 class="playerTitle">Player</h1>
+                <div class="playerInfo">
+                    <div class="playerImg">
+                        <!-- <a href="https://www.flaticon.com/free-icons/pokemon" title="pokemon icons">Pokemon icons created by Roundicons Freebies - Flaticon</a> -->
+                        <img id="gameImg" src="images/player.png" alt="player">
+                    </div>
+                    <div class="playerScore">
+                        <h1 class="score" id="playerScore">Score: 0</h1>
+                    </div>
+                </div>
+                <!-- player selection (rock, paper, scissors) -->
+                <div class="gameSelections">
+                    <div class="gameSelection" id="rockdiv">
+                        <p class="gameSelectionText" id="rockselection">Rock</p>
+                        <img class="selection" id="rockImg" src="images/rock.png" alt="rock">
+                    </div>
+                    <div class="gameSelection" id="paperdiv">
+                        <!-- <a href="https://www.flaticon.com/free-icons/paper" title="paper icons">Paper icons created by Freepik - Flaticon</a> -->
+                        <p class="gameSelectionText" id="paperselection">Paper</p>
+                        <img class="selection" id="paperImg" src="images/paper.png" alt="paper">
+                    </div>
+                    <div class="gameSelection" id="scissorsdiv">
+                        <!-- <a href="https://www.flaticon.com/free-icons/scissor" title="scissor icons">Scissor icons created by Icongeek26 - Flaticon</a> -->
+                        <p class="gameSelectionText" id="scissorsSelection">Scissors</p>
+                        <img class="selection" id="scissorsImg" src="images/scissor.png" alt="scissors">
+                    </div>
+                </div>
+            </div>
+            <!-- Player 2: Computer -->
+            <div class="playerContainer">
+                <h1 class="playerTitle">Computer</h1>
+                <div class="playerInfo">
+                    <div class="playerImg">
+                        <!-- <a href="https://www.flaticon.com/free-icons/tower-pc" title="tower pc icons">Tower pc icons created by DinosoftLabs - Flaticon</a> -->
+                        <img id="gameImg" src="images/computer.png" alt="computer">
+                    </div>
+                    <div class="playerScore">
+                        <h1 class="score" id="computerScore">Score: 0</h1>
+                    </div>
+                </div>
+                <!-- player selection (rock, paper, scissors) -->
+                <div class="gameSelections">
+                    <div class="gameSelection" id="comrockdiv">
+                        <p class="gameSelectionText">Rock</p>
+                        <img class="selection" src="images/rock.png" alt="rock">
+                    </div>
+                    <div class="gameSelection" id="compaperdiv">
+                        <!-- <a href="https://www.flaticon.com/free-icons/paper" title="paper icons">Paper icons created by Freepik - Flaticon</a> -->
+                        <p class="gameSelectionText">Paper</p>
+                        <img class="selection" src="images/paper.png" alt="paper">
+                    </div>
+                    <div class="gameSelection" id="comscissorsdiv">
+                        <!-- <a href="https://www.flaticon.com/free-icons/scissor" title="scissor icons">Scissor icons created by Icongeek26 - Flaticon</a> -->
+                        <p class="gameSelectionText">Scissors</p>
+                        <img class="selection" src="images/scissor.png" alt="scissors">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

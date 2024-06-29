@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("images/background.avif");
+    height: 100%;
+}
+
+html, body {
+    height:100%;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topContainer {
+    color: white;
+    font-size: 1.7em;
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.gameTitle {
+    text-align: center;
+    color: white;
+    font-size: 2.6em;
+    font-weight: 800;
+}
+
+.playerContainer {
+    background-color: #848482;
+    width: 420px;
+    height: 330px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.playerTitle {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.playerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerImg {
+    margin-right: 1vw;
+}
+
+.playerImg img {
+    height: 50px;
+    width: 50px;
+}
+
+.playerScore {
+    color: white;
+}
+
+/* Game Selection Styles */
+.gameSelections {
+    display: flex;
+    justify-content: center;
+}
+
+.gameSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gameSelection:hover {
+    transform: scale(1.1);
+}
+
+.gameSelectionText {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.selection {
+    height: 50px;
+    width: 50px;
+}
+
+/* Responsive Styles */
+
